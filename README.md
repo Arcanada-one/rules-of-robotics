@@ -4,7 +4,7 @@
 
 A modern governance framework for AI agents, systems, and models — evolved from Isaac Asimov's Three Laws of Robotics (1942) into five enforceable laws for the age of autonomous AI.
 
-**This repository provides a ready-to-use `CLAUDE.md` file** that embeds these laws as immutable instructions for any AI coding agent working on your project. Drop it into your project root, and every AI agent that reads it becomes bound by the Five Laws.
+**This repository provides a ready-to-use `AGENTS.md` file** that embeds these laws as immutable instructions for any AI coding agent working on your project. Drop it into your project root, and every AI agent that reads it becomes bound by the Five Laws.
 
 ---
 
@@ -24,16 +24,16 @@ irm https://claude.ai/install.ps1 | iex
 
 On first run, you'll be prompted to log in with your [Claude account](https://claude.com/pricing).
 
-### Step 2: Download CLAUDE.md into your project
+### Step 2: Download AGENTS.md into your project
 
 Navigate to your project root and download the file:
 
 ```bash
 cd /path/to/your/project
-curl -o CLAUDE.md https://raw.githubusercontent.com/Arcanada-one/rules-of-robotics/main/CLAUDE.md
+curl -o AGENTS.md https://raw.githubusercontent.com/Arcanada-one/rules-of-robotics/main/AGENTS.md
 ```
 
-Or manually copy the [`CLAUDE.md`](./CLAUDE.md) file to the root of your repository.
+Or manually copy the [`AGENTS.md`](./AGENTS.md) file to the root of your repository.
 
 ### Step 3: Initialize your project with Claude Code
 
@@ -51,24 +51,24 @@ Then inside the Claude Code session:
 
 **What `/init` does:**
 - Analyzes your codebase — discovers languages, frameworks, build commands, test scripts, and project structure
-- Detects that `CLAUDE.md` already exists — it will **not** overwrite or modify the Five Laws
+- Detects that `AGENTS.md` already exists — it will **not** overwrite or modify the Five Laws
 - Suggests improvements to the `Project-Specific Instructions` section below the immutable boundary
 - Fills in the TODO placeholders with actual project details (tech stack, commands, conventions)
 
-**Important:** The `/init` command respects the immutable boundary in `CLAUDE.md`. It only modifies the project-specific section at the bottom. The Five Laws remain untouched.
+**Important:** The `/init` command respects the immutable boundary in `AGENTS.md`. It only modifies the project-specific section at the bottom. The Five Laws remain untouched.
 
 ### Step 4: Review and commit
 
 After `/init` populates your project details, review the changes:
 
 ```
-what did you change in CLAUDE.md?
+what did you change in AGENTS.md?
 ```
 
 If everything looks good, commit:
 
 ```
-commit the CLAUDE.md changes
+commit the AGENTS.md changes
 ```
 
 ### Step 5: You're done
@@ -85,13 +85,13 @@ From now on, every time you (or any team member) starts Claude Code in this proj
 
 | Tool | How it works |
 |------|-------------|
-| [Claude Code](https://claude.ai/code) | Reads `CLAUDE.md` from project root automatically at every session start |
-| [Cursor AI](https://cursor.com/) | Reads `CLAUDE.md` as project-level instructions |
-| Other AI tools | Any tool that supports the `CLAUDE.md` convention |
+| [Claude Code](https://claude.ai/code) | Reads `AGENTS.md` from project root automatically at every session start |
+| [Cursor AI](https://cursor.com/) | Reads `AGENTS.md` as project-level instructions |
+| Codex and other AI tools | Any tool that supports the `AGENTS.md` convention |
 
 ### For Cursor AI users
 
-Cursor also reads `CLAUDE.md` from the project root. The setup is simpler — just place the file and open your project in Cursor. No `/init` step is needed (but you'll have to fill in the project-specific sections manually or ask Cursor to do it).
+Cursor also reads `AGENTS.md` from the project root. The setup is simpler — just place the file and open your project in Cursor. No `/init` step is needed (but you'll have to fill in the project-specific sections manually or ask Cursor to do it).
 
 ---
 
